@@ -73,11 +73,11 @@ ORDER BY avg_rating DESC;
 -- 11a. Find all the job titles that contain the word ‘Analyst’. 
 SELECT title
 FROM data_analyst_jobs
-WHERE title LIKE '%analyst%';
+WHERE title ILIKE '%analyst%';
 -- 11b. How many different job titles are there?
 SELECT COUNT(*)
 FROM data_analyst_jobs
-WHERE title LIKE '%analyst%';
+WHERE title ILIKE '%analyst%';
 
 -- 12a. How many different job titles do not contain either the word ‘Analyst’ or the word ‘Analytics’? 
 SELECT COUNT(*)
